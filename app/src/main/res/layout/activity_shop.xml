@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.asus.yklx3.ui.shopping.ShopActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="购物车"
+            android:textSize="25dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tiao"
+            android:text="跳转"
+            android:textSize="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+    <ExpandableListView
+        android:id="@+id/expv"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ExpandableListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        >
+        <CheckBox
+            android:id="@+id/qx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="全选"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/heji"
+            android:text="合计"
+            android:textColor="#f00"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/js"
+            android:text="结算"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="#FC7903"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
